@@ -1,5 +1,6 @@
 {% load static %}
 
+<body style="background-color:#ebebe0;"
 <header class="section-header">
 <nav class="navbar p-md-0 navbar-expand-sm navbar-light border-bottom">
 <div class="container">
@@ -9,16 +10,16 @@
   <div class="collapse navbar-collapse" id="navbarTop4">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown">
-      <a href="#" class="nav-link">   English </a>
+      <a href="#" class="nav-link" style="color:#732626">  English </a>
 
     </li>
     <li class="nav-item dropdown">
-      <a href="#" class="nav-link"> USD </a>
+      <a href="#" class="nav-link" style="color:#732626"> USD </a>
     </li>
     </ul>
     <ul class="navbar-nav">
-    <li><a href="#" class="nav-link"> <i class="fa fa-envelope"></i> Email </a></li>
-    <li><a href="#" class="nav-link"> <i class="fa fa-phone"></i> Call us </a></li>
+    <li><a href="#" class="nav-link" style="color:#732626;"> <i class="fa fa-envelope"></i> Email </a></li>
+    <li><a href="#" class="nav-link" style="color:#732626;"> <i class="fa fa-phone"></i> Call us </a></li>
   </ul> <!-- list-inline //  -->
   </div> <!-- navbar-collapse .// -->
 </div> <!-- container //  -->
@@ -29,7 +30,7 @@
 <div class="row align-items-center">
   <div class="col-lg-2 col-md-3 col-6">
     <a href="{% url 'home' %}" class="brand-wrap">
-      <img class="logo" src="{% static './images/logo.png' %}">
+      <img class="logo" src="{% static './images/ShoppingLogo.jpg' %}">
     </a> <!-- brand-wrap.// -->
   </div>
   <div class="col-lg col-sm col-md col-6 flex-grow-0">
@@ -65,16 +66,16 @@
           <div class="widget-header">
             <small class="title text-muted">Welcome guest!</small>
             <div>
-              <a href="{% url 'login' %}">Sign in</a> <span class="dark-transp"> | </span>
-              <a href="{% url 'register' %}"> Register</a>
+              <a href="{% url 'login' %}" style="color:#800040;">Sign in</a> <span class="dark-transp"> | </span>
+              <a href="{% url 'register' %}" style="color:#800040;"> Register</a>
             </div>
           </div>
               {% else %}
                 <div class="widget-header">
                   <small class="title text-muted">Welcome {{ user.first_name }}!</small>
                   <div>
-                    <a href="{% url 'dashboard' %}">Dashboard</a> <span class="dark-transp"> | </span>
-                    <a href="{% url 'logout' %}"> Logout</a>
+                    <a href="{% url 'dashboard' %}" style="color:#800040;">Dashboard</a> <span class="dark-transp"> | </span>
+                    <a href="{% url 'logout' %}" style="color:#800040;"> Logout</a>
                   </div>
                 </div>
           {% endif %}

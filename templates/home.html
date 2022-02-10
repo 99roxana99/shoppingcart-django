@@ -34,8 +34,8 @@
 		<div class="card card-product-grid">
 			<a href="{{ product.get_url }}" class="img-wrap"> <img src="{{ product.images.url }}"> </a>
 			<figcaption class="info-wrap">
-				<a href="{{ product.get_url }}" class="title">{{ product.product_name }}</a>
-				<div class="price mt-1">{{ product.price}} RON</div> <!-- price-wrap.// -->
+				<b><a href="{{ product.get_url }}" class="title">{{ product.product_name }}</a></b>
+				<div class="price mt-1" style="color:#4d0026;">{{ product.price}} RON</div> <!-- price-wrap.// -->
 			</figcaption>
 		</div>
 	</div> <!-- col.// -->

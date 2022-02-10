@@ -9,7 +9,7 @@
 
   <!-- ============================ COMPONENT 1 ================================= -->
   {% if not cart_items %}
-    <h2 class="text-center">Your Shopping Cart Is Empty</h2>
+    <h2 class="text-center" style="color:#602040;">Your Shopping Cart Is Empty</h2>
     <br>
     <div class="text-center">
       <a href="{% url 'store' %}" class="btn btn-primary">Continue Shopping</a>
@@ -97,7 +97,7 @@
   			</dl>
   			<dl class="dlist-align">
   			  <dt>Grand Total:</dt>
-  			  <dd class="text-right text-dark b"><strong>{{ grand_total }} RON</strong></dd>
+  			  <dd class="text-right text-dark b" step="0.01"><strong>{{ grand_total }} RON</strong></dd>
   			</dl>
   			<hr>
   			<p class="text-center mb-3">
